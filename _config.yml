@@ -2,7 +2,7 @@
 # Site variables
 name: HackCU Team
 og: assets/img/og.png
-logo: /assets/img/logo.png
+logo: assets/img/logo.png
 original_repo: https://github.com/hackcu/events
 description: Info on how to be part of the HackCU team
 ga: UA-109088240-1
