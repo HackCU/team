@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/main.css?_={{ site.time |  date: "%s" }}">
+    <meta name="theme-color" content="{{site.accent_color}}">
+    <meta name="author" content="{{ site.author }}">
+    <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <meta name="description" content="{{ page.description | default: site.description  }}">
+
+
+    <!--FACEBOOK DESCRIPTION -->
+    <meta property="og:title" content="{{ page.title }} | {{ site.name }}"/>
+    <meta property="og:site_name" content="{{ site.name }}"/>
+    <meta property="og:description" content="{{ page.description | default: site.description }}"/>
+    <meta property="og:image" content="http://{{site.domain}}/{{ page.og | default: site.og }}">
+	<meta property="og:image:secure_url" content="https://{{site.domain}}/{{ page.og | default: site.og  }}">
+	<meta property="og:url" content="http://{{site.domain}}">
+
+    <!--TWITTER DESCRIPTION -->
+	<meta name="twitter:card" content="summary">
+    {% unless site.twitter  == null %}
+        <meta name="twitter:site" content="@{{ site.twitter }}">
+        <meta name="twitter:creator" content="@{{ site.twitter }}">
+    {% endunless %}
+	<meta name="twitter:title" content="{{ site.name }}">
+	<meta name="twitter:description" content="{{ page.description | default: site.description  }}">
+	<meta name="twitter:image" content="http://{{site.domain}}/{{ page.og | default: site.og  }}">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="assets/lib/font-awesome.min.css">
+
+
+    <title>{{ page.title }} | {{ site.name }}</title>
+</head>
+
+
+<body>
+{% include header.html %}
+{% include apply.html %}
+{% include team.html %}
+{% include footer.html %}
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+<script src="assets/js/events.js?_={{ site.time |  date: "%s" }}"></script>
+<script src="assets/js/email.js?_={{ site.time |  date: "%s" }}"></script>
+
+{% unless site.ga == null  %}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{site.ga}}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '{{site.ga}}');
+    </script>
+{% endunless %}
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
+<script>
+    $(function() {
+      $('.apply').matchHeight();
+    });
+</script> 
+</body>
+</html>

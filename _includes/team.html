@@ -1,0 +1,24 @@
+<section class="team">
+  <div class="container">
+    <h1>The Team</h1>
+    <div class="row">
+      {% for member in site.data.team %}
+        {% capture modulo %}{{ forloop.index0 | mod:6 }}{% endcapture %}
+        {% if modulo == '0' %}
+          </div>
+          <div class="row">
+        {% endif %}
+        <div class="col-md-2">
+          <img src="{{member.img-src}}" class="img-circle img-responsive">
+          <h3>{{member.name}}</h3>
+          <h5>{{member.title}}</h5>
+          <p>
+            {% if member.linkedin != null %} <a href="{{member.linkedin}}" target="_blank"><i class="fa fa-linkedin"></i></a>{% endif %}
+            {% if member.github != null %} <a href="{{member.github}}" target="_blank"><i class="fa fa-github"></i></a>{% endif %}
+            {% if member.personal != null %} <a href="{{member.personal}}" target="_blank"><i class="fa fa-link"></i></a>{% endif %}
+          </p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

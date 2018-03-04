@@ -1,0 +1,27 @@
+<header>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5">
+				<img src="{{site.logo}}" class="logo">
+        <h1>Our Story</h1>
+				<p class="lead">{{site.story}}</p>
+        <h1>The Team</h1>
+				<p class="lead">{{site.team-description}}</p>
+			</div>
+			<div class="col-md-5 col-md-offset-2">
+        <h1>Our Mission</h1>
+        <h3 class="lead">{{site.mission}}</h3>
+        <h1>Our Values</h1>
+				<div class="panel panel-default ">
+                    <div class="panel-body">
+                    	{% for point in site.data.values %}
+							<h4>{{point.title}}</h4>
+							<p>{{point.description}}</p>
+							{%unless forloop.last %}<hr>{%endunless%}
+                    	{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>

@@ -1,0 +1,41 @@
+# PERSONALIZATION
+# Site variables
+name: HackCU Team
+og: assets/img/og.png
+logo: /assets/img/logo.png
+original_repo: https://github.com/hackcu/events
+description: Info on how to be part of the HackCU team
+ga: UA-109088240-1
+domain: team.hackcu.org
+
+
+# Style variables
+accent_color: "#22b573"
+events_overlay_color: "#2697FF"
+background_color: "#FAFAFA"
+footer_text_color: "#666666"
+
+# Author variables
+author: HackCU
+mission: "Bring people together to create, learn, and have fun!"
+story: "HackCU was started four years ago by a group of passionate students who wanted to provide other students
+   the time and space to work on projects they don’t normally work on through school. Since then we’ve been committed
+    to fulfilling our mission of bringing CU Boulder students high-quality, inclusive events open to people of all levels of experience."
+team-description: "The HackCU team is a group of innovative self starters who are inherently entrepreneurial in nature. 
+    All of our events are 100% led by students. We teach our team members how to run and manage some of the best technology 
+    events in the country. With this experience, our team members and alumni go on to work for some of the biggest names in tech and some even start their own companies. "
+email: contact@hackcu.org
+
+# Social media + community variables
+twitter: hackcu
+fb: hackcu
+fb-community: hackcu
+slack-signup: https://slack.hackcu.org
+
+instagram: hackcu
+github-org: hackcu
+ 
+# Internal configuration
+sass:
+    sass_dir: assets/_sass
+    style: compressed

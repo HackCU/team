@@ -1,0 +1,420 @@
+---
+---
+
+@import "mixins";
+
+$background-color: {{site.background_color}};
+// $accent-color: #165E33; 
+// $events-color:#AA504A;
+$accent-color: {{site.accent_color}};
+$events-color:{{site.events_overlay_color}};
+// $accent-color: #AA401B;
+// $events-color:#225E50;
+$accent-text-color:white;
+
+$footer-text: {{site.footer_text_color}};
+
+@font-face {
+    font-family: Biko;
+    src: url('../fonts/Biko_Regular.otf');
+}
+
+html { height: 100%; width: 100% }
+
+body {
+    background-color: $background-color;
+    padding: 0;
+    font-size: 1.6em;
+    height: 100%;
+    width: 100%;
+    font-family: "Lato", Helvetica, sans-serif;
+
+}
+
+h1,h2,h3,h4,h5 {
+    font-family: "Biko", Helvetica, sans-serif;
+
+}
+
+.biko {
+    font-family: "Biko", Helvetica, sans-serif;
+}
+
+section.social-media {
+    min-height: 20%;
+}
+
+.companies {
+  text-align: center;
+}
+
+.team {
+  text-align: center;
+  i {
+    margin: 5px;
+    color: $accent-color;
+  }
+  .row {
+    margin: 10px;
+  }
+}
+
+.accent-section {
+    background-color: $accent-color;
+    color: $accent-text-color;
+    padding-bottom: 3em;
+    text-align: center;
+
+    .social-icons {
+        a {
+            color: $accent-text-color;
+            font-size: 2em;
+
+            @include transition(all .1s linear);
+
+            &:hover {
+                color: rgba($accent-text-color, 0.7);
+            }
+
+        }
+    }
+    h1,
+    h2 {
+      text-align: center;
+    }
+
+    .panel {
+      color: black;
+      text-align: left;
+    }
+
+    .apply-btn {
+      display: inline-block;
+      font-size: 30px;
+    }
+
+    .btn {
+      background-color: {{site.background_color}};
+      color: black;
+    }
+}
+
+.social-icons  {
+    a{
+        text-decoration: none;
+        padding: 10px;
+        font-size: 100%;
+    }
+
+   
+}
+
+.btn {
+    @include box-shadow(0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19));
+    // text-transform: uppercase;
+    @include border-radius(0);
+    position: relative;
+    top: 0;
+    @include transition(all .1s linear);
+
+    &:hover {
+        top: 1px;
+        @include box-shadow(0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19));
+
+
+    }
+
+    i {
+        color: inherit;
+        margin-right: 0.5em;
+    }
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    &.btn-fb {
+        color: #333;
+        background-color: #fff;
+        border-color: #ccc;
+    }
+
+    &.btn-accent {
+        font-size: 1.2em;
+        color: $accent-text-color;
+        background-color: $accent-color;
+        border-color: $accent-color;
+
+        &:active, &:focus{
+            background-color: $accent-color;
+            margin-color: $accent-color;
+        }
+
+        &:hover{
+            background-color: lighten($accent-color, 5%);
+            border-color: lighten($accent-color, 5%);
+        }
+
+        
+    }
+
+
+}
+
+
+
+
+header {
+    padding-top: 7em;
+    padding-bottom: 5em;
+    min-height: 80%;
+
+    img.logo {
+        width: 50%;
+        
+    }
+
+    img.logo, .lead,  .btn {
+        margin-bottom: 2em;
+
+    }
+
+     div.panel {
+        @include box-shadow(1px 5px 8px 1px rgba(0,0,0,.19));
+        @include border-radius(0);
+        .panel-body {
+            border: 1px $accent-color;
+            padding: 10px;
+        }
+
+        p{
+            font-size: 14px;
+        }
+    }
+
+
+}
+
+footer {
+    padding-top: 2em;
+    width: 100%;
+  
+    p {
+        color: $footer-text;
+        opacity: 0.5;
+        font-size: 70%; 
+
+    }
+
+
+    
+
+    .row {
+        margin-bottom: 10px;
+    }
+
+    a {
+        opacity: 0.5;   
+        color: $footer-text;
+        @include transition(0.5s ease);
+        font-size: 70%; 
+
+        &:hover {
+            opacity: 0.9;
+            color: $footer-text;
+        }
+
+        &:active, &:focus {
+            color: $footer-text;
+            opacity: 0.5;
+        }
+        
+    }
+
+    .text-imp {
+        color: darken($footer-text,100%);
+        text-transform: uppercase;
+        text-decoration: none;
+        opacity: 0.9;
+        font-size: 100%;   
+         &:active, &:focus {
+            color: darken($footer-text,100%);
+            opacity: 0.9;
+        }
+
+    }
+
+    
+}
+
+
+
+.white-text {
+    color: $accent-text-color;
+}
+
+section {
+    padding-bottom: 20px;
+    padding-top: 2em;
+}
+
+
+section.events{
+    background: linear-gradient( rgba($events-color, 0.75), rgba($events-color, 0.75) ), url(../../{{site.events_bg_img}}) no-repeat center center/cover;
+   
+
+    .main-title {
+        padding-bottom: 30px;
+    }
+
+    div.panel {
+        @include box-shadow(1px 5px 8px 1px rgba(0,0,0,.19));
+        @include border-radius(0);
+        height: 170px;
+        position: relative;
+        top: 0;
+        @include transition(all .1s linear);
+        border: 0;
+        .panel-body {
+            padding: 10px;
+            height: 70px;
+            font-size: 14px;
+            @include border-radius(0);
+            overflow: auto;
+
+            p {
+                overflow: auto;
+                 height: 40px;
+                 margin: 0;
+            }
+
+        }
+
+        .past-text {
+            position: absolute;
+            display: none;
+            font-size: 0.7em;
+            right: 0px;
+            z-index: 10;
+            background: rgba(darken(white,80%), .8);
+            color: white;
+            padding: 5px;
+            padding-left: 10px;
+
+            @include border-radius(0 0 0 3px);
+        }
+
+        .panel-heading {
+            padding: 0;
+            height: 70px;
+            background-color: darken($accent-color,5%);
+            @include border-radius(0);
+
+            
+            img {
+                position: relative; 
+                object-fit: cover;
+                height: 70px;
+                width: 100%;
+                filter: brightness(60%) grayscale(20%);
+                &.light_background {
+                    filter: grayscale(20%);
+                }
+            }
+
+            h1,h2,h3, h4{
+                position: absolute;
+                top: 0px;
+                z-index: 10;
+                text-transform: uppercase;
+                padding: 10px;
+                color: $accent-text-color;
+
+
+                &.light_background{
+                    color: black;
+                }
+            }
+        }
+
+        .panel-footer {
+            text-align: right;
+            font-size: 11px;
+            font-family: "Roboto", Helvetica, sans-serif;
+            font-style: italic;
+            @include border-radius(0);
+        }
+
+
+
+        &:hover {
+            position: relative;
+            top: 1px;
+            box-shadow: 1px 1px 3px 1px rgba(0,0,0,.19);
+            filter:brightness(95%);
+
+        }
+
+
+
+        &.past .past-text{ 
+            display: inline;
+        }
+    }
+
+    form#email-form{
+        margin-bottom: 30px;
+        height: 90px;
+    }
+
+    .notice-message{
+        color: #fff;
+        padding: 10px;
+        font-size: 1.1em;
+        font-style: bold;
+        margin: 10px;
+        display: inline-block;
+        p{
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    #email-success{
+        background: $accent-color;
+    }
+
+    #email-failure{
+        background: white;
+        color: #b52121;
+    }
+
+    a.event-url {
+        color: black;
+
+        &:hover, &:active, &:focus {
+            text-decoration: none;
+        }
+
+    }
+
+    .calendar {
+        margin: 25px auto;
+        width: 300px;
+    }
+    
+
+}
+
+
+@media (max-width: 768px) {
+    .text-center-xs, {
+        text-align: center;
+    } 
+    header {
+        padding-top: 2em;
+    }
+}
+
+
+
