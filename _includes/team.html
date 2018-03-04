@@ -1,13 +1,8 @@
 <section class="team">
   <div class="container">
     <h1>The Team</h1>
-    <div class="row">
+    <div class="row auto-clear">
       {% for member in site.data.team %}
-        {% capture modulo %}{{ forloop.index0 | mod:6 }}{% endcapture %}
-        {% if modulo == '0' %}
-          </div>
-          <div class="row">
-        {% endif %}
         <div class="col-md-2">
           <img src="{{member.img-src}}" class="img-circle img-responsive" style="display:inline-block">
           <h3>{{member.name}}</h3>
