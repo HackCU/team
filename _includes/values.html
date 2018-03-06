@@ -9,15 +9,6 @@
 		    <div class="col-md-4">
 			{% for point in site.data.values %}
 				{% capture modulo %}{{ forloop.index | modulo: 3 }}{% endcapture %}
-				{% if modulo == '0' %}
-					<h3>{{point.title}}</h3>
-					<p>{{point.description}}</p>
-				{% endif %}	
-			{% endfor %}
-			</div>
-			<div class="col-md-4">
-			{% for point in site.data.values %}
-				{% capture modulo %}{{ forloop.index | modulo: 3 }}{% endcapture %}
 				{% if modulo == '1' %}
 					<h3>{{point.title}}</h3>
 					<p>{{point.description}}</p>
@@ -28,6 +19,15 @@
 			{% for point in site.data.values %}
 				{% capture modulo %}{{ forloop.index | modulo: 3 }}{% endcapture %}
 				{% if modulo == '2' %}
+					<h3>{{point.title}}</h3>
+					<p>{{point.description}}</p>
+				{% endif %}	
+			{% endfor %}
+			</div>
+			<div class="col-md-4">
+			{% for point in site.data.values %}
+				{% capture modulo %}{{ forloop.index | modulo: 3 }}{% endcapture %}
+				{% if modulo == '0' %}
 					<h3>{{point.title}}</h3>
 					<p>{{point.description}}</p>
 				{% endif %}	

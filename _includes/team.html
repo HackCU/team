@@ -1,14 +1,15 @@
-<section class="team">
+<section class="team accent-section">
   <div class="container">
-    <h1>The Team</h1>
+    <h1>Current Team</h1>
     <div class="row auto-clear">
       {% for member in site.data.team %}
         <div class="col-md-2 center-block">
           {% if member.url %}<a href="{{member.url}}" target="_blank">{%endif%}
             <img src="{% if member.img-src %}{{member.img-src}}{%else%}/assets/img/team/placeholder.jpg{%endif%}" class="img-circle img-responsive" style="display:inline-block">
             <h3>{{member.name}}</h3> 
+            <h5>{{member.title}}</h5>
           {% if member.url %}</a>{%endif%}
-          <h5>{{member.title}}</h5>
+          
         </div>
       {% endfor %}
     </div>

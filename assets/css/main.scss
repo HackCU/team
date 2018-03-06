@@ -67,7 +67,11 @@ section.social-media {
 
     a {
         
-        color: #333;
+         h3,h5 {
+              opacity: 1.0;
+              @include transition(0.5s ease);
+          }
+        color: inherit;
         text-decoration: none;
         @include transition(0.5s ease);
 
@@ -75,7 +79,9 @@ section.social-media {
                 
         &:hover {
             opacity: 0.6;
-            color: lighten(#333,20%);
+            h3, h5 {
+              opacity: 0.6;
+            }
             
         }
 
