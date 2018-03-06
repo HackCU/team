@@ -1,19 +1,30 @@
-<section class="accent-section">
+<section class="apply">
   <div class="container">
     <div class="row" style="overflow:hidden">
       <h1>Join Our Team</h1>
       <div class="col-md-6  col-md-offset-3">
           <h2>Open Positions</h2>
           <div class="panel panel-default ">
-                    <div class="panel-body">
-                      {% for position in site.data.open_positions %}
-              <h4>{{position.title}}</h4>
-              <p>{{position.description}}</p>
-              {%unless forloop.last %}<hr>{%endunless%}
-                      {% endfor %}
+              <div class="panel-body">
+                {% for position in site.data.open_positions %}
+                  <h4>{{position.title}}</h4>
+                  <p>{{position.description}}</p>
+                  {%unless forloop.last %}<hr>{%endunless%}
+                {% endfor %}
             </div>
           </div>
-        <a href="https://hackcu.typeform.com/to/bGW9e3" target="_blank" class="apply-btn btn">Apply Now!</a>
+
+          <div class="buttons ">
+              <!--&lt;!&ndash;Inspired by https://github.com/HackCU/HackCU-Temp by Alex Walling&ndash;&gt;-->
+              <div class="svg-wrapper ">
+                  <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                      <rect class="shape" height="40" width="150"/>
+                      <div class="text">
+                          <a href="https://hackcu.typeform.com/to/bGW9e3" target="_blank">Apply</a>
+                      </div>
+                  </svg>
+              </div>
+          </div>
       </div>
     </div>
   </div>

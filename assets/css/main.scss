@@ -42,6 +42,7 @@ h1,h2,h3,h4,h5 {
 
 section.social-media {
     min-height: 20%;
+
 }
 
 .companies {
@@ -57,15 +58,31 @@ section.social-media {
   .row {
     margin: 10px;
   }
+  img {
+    @include box-shadow( 0px 0px 2px 2px rgba(0, 0, 0, 0.2));
+  }
+
+    a {
+        
+        color: #333;
+        text-decoration: none;
+        @include transition(0.5s ease);
+
+
+                
+        &:hover {
+            opacity: 0.6;
+            color: lighten(#333,20%);
+            
+        }
+
+        &:active, &:focus {
+            color: inherit;
+        }
+        
+    }
 }
 
-#team-url {
-    text-decoration: none;
-    color: inherit;
- } 
- #team-url:hover {
-     color: grey;
- }
 
 @media (min-width:1200px){
   .auto-clear .col-lg-1:nth-child(12n+1){clear:left;}
@@ -101,6 +118,9 @@ section.social-media {
     color: $accent-text-color;
     padding-bottom: 3em;
     text-align: center;
+    @include box-shadow( 0px 0px 2px 2px rgba(0, 0, 0, 0.2));
+    z-index: 99;
+    position: relative;
 
     .social-icons {
         a {
@@ -208,7 +228,7 @@ header {
     min-height: 80%;
 
     img.logo {
-        width: 50%;
+        width: 100%;
         
     }
 
@@ -297,152 +317,91 @@ section {
 }
 
 
-section.events{
+section.apply{
     background: linear-gradient( rgba($events-color, 0.75), rgba($events-color, 0.75) ), url(../../{{site.events_bg_img}}) no-repeat center center/cover;
-   
+    color: $accent-text-color;
+    padding-bottom: 3em;
+    text-align: center;
+    h1,
+    h2 {
+      text-align: center;
+    }
+    .panel {
+      color: black;
+      text-align: left;
+    }
 
     .main-title {
         padding-bottom: 30px;
     }
 
-    div.panel {
-        @include box-shadow(1px 5px 8px 1px rgba(0,0,0,.19));
-        @include border-radius(0);
-        height: 170px;
-        position: relative;
-        top: 0;
-        @include transition(all .1s linear);
-        border: 0;
-        .panel-body {
-            padding: 10px;
-            height: 70px;
-            font-size: 14px;
-            @include border-radius(0);
-            overflow: auto;
-
-            p {
-                overflow: auto;
-                 height: 40px;
-                 margin: 0;
-            }
-
-        }
-
-        .past-text {
-            position: absolute;
-            display: none;
-            font-size: 0.7em;
-            right: 0px;
-            z-index: 10;
-            background: rgba(darken(white,80%), .8);
-            color: white;
-            padding: 5px;
-            padding-left: 10px;
-
-            @include border-radius(0 0 0 3px);
-        }
-
-        .panel-heading {
-            padding: 0;
-            height: 70px;
-            background-color: darken($accent-color,5%);
-            @include border-radius(0);
-
-            
-            img {
-                position: relative; 
-                object-fit: cover;
-                height: 70px;
-                width: 100%;
-                filter: brightness(60%) grayscale(20%);
-                &.light_background {
-                    filter: grayscale(20%);
-                }
-            }
-
-            h1,h2,h3, h4{
-                position: absolute;
-                top: 0px;
-                z-index: 10;
-                text-transform: uppercase;
-                padding: 10px;
-                color: $accent-text-color;
-
-
-                &.light_background{
-                    color: black;
-                }
-            }
-        }
-
-        .panel-footer {
-            text-align: right;
-            font-size: 11px;
-            font-family: "Roboto", Helvetica, sans-serif;
-            font-style: italic;
-            @include border-radius(0);
-        }
-
-
-
-        &:hover {
-            position: relative;
-            top: 1px;
-            box-shadow: 1px 1px 3px 1px rgba(0,0,0,.19);
-            filter:brightness(95%);
-
-        }
-
-
-
-        &.past .past-text{ 
-            display: inline;
-        }
-    }
-
-    form#email-form{
-        margin-bottom: 30px;
-        height: 90px;
-    }
-
-    .notice-message{
-        color: #fff;
-        padding: 10px;
-        font-size: 1.1em;
-        font-style: bold;
-        margin: 10px;
-        display: inline-block;
-        p{
-            margin: 0;
-            padding: 0;
-        }
-    }
-
-    #email-success{
-        background: $accent-color;
-    }
-
-    #email-failure{
-        background: white;
-        color: #b52121;
-    }
-
-    a.event-url {
-        color: black;
-
-        &:hover, &:active, &:focus {
-            text-decoration: none;
-        }
-
-    }
-
-    .calendar {
-        margin: 25px auto;
-        width: 300px;
-    }
+    
     
 
 }
+
+.buttons {
+
+  &.title {
+    padding-top: 10vh;
+    padding-bottom: 3vh;
+  }
+  
+
+  .svg-wrapper {
+    margin-top: 0;
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 3vh;
+    text-transform: uppercase;
+    border-radius: 3px;
+
+    a {
+      color: $accent-color;
+      text-decoration: none;
+
+      padding: 5px 10px;
+    }
+
+    svg {
+      background-color: transparent;
+      @include box-shadow(0px 2px 8px 3px rgba(0, 0, 0, 0.2));
+
+      &:hover {
+        @include box-shadow(0px 2px 8px 0px rgba(0, 0, 0, 0.2));
+      }
+
+    }
+    .shape {
+      stroke-width: 8px;
+      fill: white;
+      stroke: $accent-color;
+      stroke-dasharray: 150 400;
+      stroke-dashoffset: -190;
+      @include transition(1s all ease);
+
+    }
+
+    .text {
+      margin-top: -40px;
+      color: $accent-color;
+      font-size: 1.5em;
+      text-align: center;
+    }
+
+    &:hover .shape {
+      stroke: $accent-color,10%;
+      stroke-dasharray: 50 0;
+      stroke-dashoffset: 0;
+    }
+
+  }
+
+  
+}
+
 
 
 @media (max-width: 768px) {

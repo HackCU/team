@@ -30,7 +30,7 @@
   img-src: assets/img/team/elliot.jpg
   url: https://elliotwhitehead.com
 
-- name: Gerard Casas
+- name: Gerard Casas Saez
   title: Director of HackCU
   img-src: assets/img/team/gerard.jpg
   url: http://gerard.space
@@ -57,13 +57,10 @@
 
 - name: Jake Lai
   title: Organizer
-  img-src: assets/img/team/placeholder.jpg
-  url: "#"
 
 - name: Mackenzie Lobato
   title: Organizer
   img-src: assets/img/team/mackenzie.jpg
-  url: "#"
 
 - name: Raghav Sharma
   title: Organizer
