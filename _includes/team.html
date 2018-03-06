@@ -4,8 +4,10 @@
     <div class="row auto-clear">
       {% for member in site.data.team %}
         <div class="col-md-2">
-          <img src="{{member.img-src}}" class="img-circle img-responsive" style="display:inline-block">
-          <h3>{{member.name}}</h3>
+          <a href="{{member.url}}" target="_blank">
+            <img src="{{member.img-src}}" class="img-circle img-responsive" style="display:inline-block">
+          </a>
+          <a href="{{member.url}}" target="_blank" id="team-url"> <h3>{{member.name}}</h3> </a>
           <h5>{{member.title}}</h5>
         </div>
       {% endfor %}

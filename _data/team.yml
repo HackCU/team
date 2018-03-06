@@ -3,59 +3,74 @@
 - name: Alex Luo
   title: Director of Finance
   img-src: assets/img/team/alex.jpg
+  url: https://github.com/Alex-Luo
 
 - name: Aparajithan Venkateswaran
   title: Director of Tech
   img-src: assets/img/team/apara.jpg
+  url: https://aparav.github.io
 
 - name: Carl Cortright
   title: Director of HackCU
   img-src: assets/img/team/carl.jpg
+  url: https://carlcortright.com
 
 - name: Conor Parrish
   title: Director of Logistics
   img-src: assets/img/team/conor.jpg
+  url: https://conorparrish.com
 
 - name: Drew Casner
   title: Director of Hacker Experience
   img-src: assets/img/team/drew.jpg
+  url: https://github.com/Andrew-Casner
 
 - name: Elliot Whitehead
   title: Organizer
   img-src: assets/img/team/elliot.jpg
+  url: https://elliotwhitehead.com
 
 - name: Gerard Casas
   title: Director of HackCU
   img-src: assets/img/team/gerard.jpg
+  url: http://gerard.space
 
 - name: Kevin Yang
   title: Organizer
   img-src: assets/img/team/kevin.jpg
+  url: http://keyaa.github.io/
 
 - name: Oliver Collins
   title: Organizer
   img-src: assets/img/team/oliver.jpg
+  url: http://olivr.io
 
 - name: Shubha Swamy
   title: Organizer
   img-src: assets/img/team/shubha.jpg
+  url: http://shubhaswamy.com
 
 - name: Will Dickinson
   title: Organizer
   img-src: assets/img/team/will.jpg
+  url: https://www.linkedin.com/in/williamjdickinson
 
 - name: Jake Lai
   title: Organizer
   img-src: assets/img/team/placeholder.jpg
+  url: "#"
 
 - name: Mackenzie Lobato
   title: Organizer
   img-src: assets/img/team/mackenzie.jpg
+  url: "#"
 
 - name: Raghav Sharma
   title: Organizer
   img-src: assets/img/team/raghav.jpg
+  url: https://github.com/sharmaraghav260
 
 - name: Jean-Christophe(JC) Owens
   title: Organizer
   img-src: assets/img/team/jc.jpg
+  url: https://jeow9028.github.io/vivi.io/
