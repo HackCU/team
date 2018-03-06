@@ -4,8 +4,8 @@ name: HackCU Team
 og: assets/img/og.png
 logo: assets/img/logo.png
 events_bg_img: /assets/img/people.jpg
-original_repo: https://github.com/hackcu/events
-description: Info on how to be part of the HackCU team
+original_repo: https://github.com/hackcu/team
+description: Do you like HackCU? Join our team!
 ga: UA-109088240-1
 domain: team.hackcu.org
 
@@ -28,16 +28,14 @@ team-description: "Our team comprises of innovative self starters who constantly
     element of HackCU is that all of our events are led exclusively by students. We teach and learn from our team
     members how to run and manage some of the largest technology events in the country. With this experience, our
     team members and alumni go on to work for some of the biggest names in tech and some even start their own companies."
-email: contact@hackcu.org
+
 
 # Social media + community variables
 twitter: hackcu
 fb: hackcu
-fb-community: hackcu
-slack-signup: https://slack.hackcu.org
-
 instagram: hackcu
 github-org: hackcu
+email: contact@hackcu.org
  
 # Internal configuration
 sass:
