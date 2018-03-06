@@ -59,6 +59,14 @@ section.social-media {
   }
 }
 
+#team-url {
+    text-decoration: none;
+    color: inherit;
+ } 
+ #team-url:hover {
+     color: grey;
+ }
+
 @media (min-width:1200px){
   .auto-clear .col-lg-1:nth-child(12n+1){clear:left;}
   .auto-clear .col-lg-2:nth-child(6n+1){clear:left;}
