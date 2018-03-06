@@ -1,0 +1,39 @@
+<section id="values" class="accent-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+		        <h1>Our Values</h1>
+		    </div>
+		</div>
+		<div class="row text-center">
+		    <div class="col-md-4">
+			{% for point in site.data.values %}
+				{% capture modulo %}{{ forloop.index | modulo: 3 }}{% endcapture %}
+				{% if modulo == '1' %}
+					<h3>{{point.title}}</h3>
+					<p>{{point.description}}</p>
+				{% endif %}	
+			{% endfor %}
+			</div>
+			<div class="col-md-4">
+			{% for point in site.data.values %}
+				{% capture modulo %}{{ forloop.index | modulo: 3 }}{% endcapture %}
+				{% if modulo == '2' %}
+					<h3>{{point.title}}</h3>
+					<p>{{point.description}}</p>
+				{% endif %}	
+			{% endfor %}
+			</div>
+			<div class="col-md-4">
+			{% for point in site.data.values %}
+				{% capture modulo %}{{ forloop.index | modulo: 3 }}{% endcapture %}
+				{% if modulo == '0' %}
+					<h3>{{point.title}}</h3>
+					<p>{{point.description}}</p>
+				{% endif %}	
+			{% endfor %}
+			</div>
+		</div>
+	</div>
+</section>
+		
