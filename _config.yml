@@ -18,12 +18,15 @@ footer_text_color: "#666666"
 # Author variables
 author: HackCU
 mission: "Bring people together to create, learn, and have fun!"
-story: "HackCU was started four years ago by a group of passionate students who wanted to provide other students
-   the time and space to work on projects they don’t normally work on through school. Since then we’ve been committed
-    to fulfilling our mission of bringing CU Boulder students high-quality, inclusive events open to people of all levels of experience."
-team-description: "The HackCU team is a group of innovative self starters who are inherently entrepreneurial in nature. 
-    All of our events are 100% led by students. We teach our team members how to run and manage some of the best technology 
-    events in the country. With this experience, our team members and alumni go on to work for some of the biggest names in tech and some even start their own companies. "
+story: "HackCU began four years ago when a group of passionate students wanted to provide other students
+   the time and space to express their crativity and work on things they usually don't get a chance to.
+   Since then we’ve been committed to fulfilling our mission of bringing students high-quality, inclusive
+   events open to everyone irrespective of their experience."
+team-description: "Our team comprises of innovative self starters who constantly want to empower the community.
+    From computer scientists to entrepeneurs, our team has people of all backgrounds and experiences. An important
+    element of HackCU is that all of our events are led exclusively by students. We teach and learn from our team
+    members how to run and manage some of the largest technology events in the country. With this experience, our
+    team members and alumni go on to work for some of the biggest names in tech and some even start their own companies."
 email: contact@hackcu.org
 
 # Social media + community variables
