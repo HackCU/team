@@ -1,0 +1,17 @@
+<section class="companies">
+  <div class="container">
+    <h1>Where They Go</h1>
+    <div class="row">
+      <p class="col-md-6 col-md-offset-3">{{ site.companies-description}}</p>
+    </div>
+    <div class="row auto-clear">
+      {% for company in site.data.companies %}
+        <div class="col-md-3">
+          <a href="{{company.url}}" target="_blank">
+            <img src="{{company.img-src}}" class="img-responsive" style="display:inline-block">
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
