@@ -1,57 +1,45 @@
-
- 
-- name: Alex Luo
-  title: Director of Finance
-  img-src: assets/img/team/alex.jpg
-  url: https://github.com/Alex-Luo
-
 - name: Aparajithan Venkateswaran
-  title: Director of Tech
+  title: Organizer
   img-src: assets/img/team/apara.jpg
   url: https://aparav.github.io
 
 - name: Carl Cortright
-  title: Director of HackCU
+  title: Director
   img-src: assets/img/team/carl.jpg
   url: https://carlcortright.com
 
-- name: Conor Parrish
-  title: Director of Logistics
-  img-src: assets/img/team/conor.jpg
-  url: http://conorparrish.com
-
 - name: Drew Casner
-  title: Director of Hacker Experience
+  title: Advisor
   img-src: assets/img/team/drew.jpg
   url: https://github.com/Andrew-Casner
 
 - name: Elliot Whitehead
-  title: Organizer
+  title: Hacker Experience Director
   img-src: assets/img/team/elliot.jpg
   url: https://elliotwhitehead.com
 
 - name: Gerard Casas Saez
-  title: Director of HackCU
+  title: Tech Director
   img-src: assets/img/team/gerard.jpg
   url: http://gerard.space
 
 - name: Kevin Yang
-  title: Organizer
+  title: Marketing Director
   img-src: assets/img/team/kevin.jpg
   url: http://keyaa.github.io/
 
 - name: Oliver Collins
-  title: Organizer
+  title: Finance Director
   img-src: assets/img/team/oliver.jpg
   url: http://olivr.io
 
 - name: Shubha Swamy
-  title: Organizer
+  title: Logistics Director
   img-src: assets/img/team/shubha.jpg
   url: http://shubhaswamy.com
 
 - name: Will Dickinson
-  title: Organizer
+  title: Finance Director
   img-src: assets/img/team/will.jpg
   url: https://www.linkedin.com/in/williamjdickinson
 
@@ -62,12 +50,33 @@
   title: Organizer
   img-src: assets/img/team/mackenzie.jpg
 
-- name: Raghav Sharma
-  title: Organizer
-  img-src: assets/img/team/raghav.jpg
-  url: https://github.com/sharmaraghav260
-
 - name: Jean-Christophe(JC) Owens
   title: Organizer
   img-src: assets/img/team/jc.jpg
   url: https://jeow9028.github.io/vivi.io/
+
+- name: Jeffrey Lucca
+  title: Organizer
+  url: https://github.com/naby
+
+- name: David Lopez
+  title: Organizer
+
+- name: Abbigail Nicholson
+  title: Organizer
+  url: https://github.com/abbirosen
+
+- name: Priyanka Karki
+  title: Organizer
+
+- name: Matthew Strong
+  title: Organizer
+  url: https://github.com/peasant98
+
+- name: Ilamvazhuthy Subbiah
+  title: Organizer
+
+- name: Devon Soto
+  title: Organizer
+  url: https://github.com/devonsoto77/
+
