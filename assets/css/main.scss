@@ -52,6 +52,52 @@ section.social-media {
   }
 }
 
+.events {
+    text-align: center;
+    a {
+        text-decoration: none;
+        opacity: 0.5;   
+        color: white;
+        @include transition(0.5s ease);
+        font-size: 30px; 
+        &:hover {
+            opacity: 0.9;
+            
+        }
+
+        &:active, &:focus {
+            
+            opacity: 0.5;
+        }
+    
+    }
+
+    .image {
+        width: 100%;
+        height: 200px;
+        @include box-shadow(1px 5px 8px 1px rgba(0,0,0,.19));
+        padding-top: 80px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        @include transition(0.5s ease);
+ 
+        &:hover {
+            margin-top: 22px;
+            margin-bottom: 18px;
+            @include box-shadow(1px 2px 6px 1px rgba(0,0,0,.19));
+            
+        }
+
+        &:active, &:focus {
+            
+            @include box-shadow(1px 5px 8px 1px rgba(0,0,0,.19));
+        }
+ 
+    }
+ }
+
 .team {
   text-align: center;
   i {
@@ -261,6 +307,8 @@ header {
 
 
 }
+
+
 
 footer {
     padding-top: 2em;
