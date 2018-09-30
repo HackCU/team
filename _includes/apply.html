@@ -3,6 +3,7 @@
     <div class="row" style="overflow:hidden">
       <h1>Join Our Team</h1>
       <div class="col-md-6  col-md-offset-3">
+          {% if site.data.open_positions %}
           <h2>Open Positions</h2>
           <div class="panel panel-default ">
               <div class="panel-body">
@@ -13,18 +14,33 @@
                 {% endfor %}
             </div>
           </div>
-
           <div class="buttons ">
-              <!--&lt;!&ndash;Inspired by https://github.com/HackCU/HackCU-Temp by Alex Walling&ndash;&gt;-->
-              <div class="svg-wrapper ">
-                  <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
-                      <rect class="shape" height="40" width="150"/>
-                      <div class="text">
-                          <a href="https://hackcu.typeform.com/to/bGW9e3" target="_blank">Apply</a>
-                      </div>
-                  </svg>
-              </div>
-          </div>
+                <!--&lt;!&ndash;Inspired by https://github.com/HackCU/HackCU-Temp by Alex Walling&ndash;&gt;-->
+                <div class="svg-wrapper ">
+                    <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                        <rect class="shape" height="40" width="150"/>
+                        <div class="text">
+                            <a href="https://hackcu.typeform.com/to/bGW9e3" target="_blank">Apply</a>
+                        </div>
+                    </svg>
+                </div>
+            </div>
+          {% else %}
+            <h2>We currently have no open positions :'(</h2>
+            <p>However, if you are really interested in joining and/or knowing more about us, we would like to hear from you! Send us an email!</p>
+            <br>
+            <div class="buttons ">
+                    <!--&lt;!&ndash;Inspired by https://github.com/HackCU/HackCU-Temp by Alex Walling&ndash;&gt;-->
+                    <div class="svg-wrapper ">
+                        <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                            <rect class="shape" height="40" width="150"/>
+                            <div class="text">
+                                <a href="mailto:contact@hackcu.org" target="_blank">Email</a>
+                            </div>
+                        </svg>
+                    </div>
+                </div>
+          {% endif %}
       </div>
     </div>
   </div>
