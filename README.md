@@ -27,3 +27,7 @@ Deployment is done automatically by [GitHub pages](https://pages.github.com/). Y
 ## Want to contribute?
 
 Please read our [Code of Conduct](.github/CODE_OF_CONDUCT.md), then follow these [guidelines](.github/CONTRIBUTING.md)
+
+### Adding new team images 
+
+1. Resize the image to 200 x 200 px centering
