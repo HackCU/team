@@ -9,17 +9,17 @@
   url: http://elliotwhitehead.com
 
 - name: Kevin Yang
-  title: Marketing Director
+  title: Finance Director
   img-src: assets/img/team/kevin.jpg
   url: http://keyaa.github.io/
 
 - name: Shubha Swamy
-  title: Logistics Director
+  title: Co-Director
   img-src: assets/img/team/shubha.jpg
   url: http://shubhaswamy.com
 
 - name: Mackenzie Lobato
-  title: Organizer
+  title: Co-Director
   img-src: assets/img/team/mackenzie.jpg
 
 - name: Jean-Christophe(JC) Owens
@@ -28,23 +28,23 @@
   url: https://jeow9028.github.io/vivi.io/
 
 - name: Jeff Lucca
-  title: Organizer
+  title: Tech Director
   url: https://github.com/lucca
 
 - name: Zahraa Abbasi
   img-src: assets/img/team/zahraa.jpg
-  title: Organizer
+  title: Marketing Director
 
 - name: Abbigail Nicholson
   title: Organizer
   url: https://github.com/abbirosen
 
 - name: Priyanka Karki
-  title: Organizer
+  title: Hacker Experience Director
   url: https://github.com/priyankarki
 
 - name: Matthew Strong
-  title: Organizer
+  title: Tech Director
   url: https://github.com/peasant98
 
 - name: Devon Soto
@@ -54,9 +54,11 @@
 
 - name: Parth Adroja
   title: Organizer
+  url: https://github.com/parthadroja5795/
 
 - name: Rami Mouro
   title: Organizer
+  url: https://github.com/ramalamadingdong
 
 - name: Aren Dalloul
   title: Organizer
