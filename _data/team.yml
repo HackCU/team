@@ -1,12 +1,7 @@
 - name: Apara Venkat
-  title: Organizer
+  title: Logistics Director
   img-src: assets/img/team/apara.jpg
   url: https://aparav.github.io
-
-- name: Elliot Whitehead
-  title: Hacker Experience Director
-  img-src: assets/img/team/elliot.jpg
-  url: http://elliotwhitehead.com
 
 - name: Kevin Yang
   title: Finance Director
@@ -15,71 +10,84 @@
 
 - name: Shubha Swamy
   title: Co-Director
-  img-src: assets/img/team/shubha.jpg
+  img-src: assets/img/team/shubha.png
   url: http://shubhaswamy.com
 
 - name: Mackenzie Lobato
   title: Co-Director
   img-src: assets/img/team/mackenzie.jpg
 
-- name: Jean-Christophe(JC) Owens
-  title: Organizer
-  img-src: assets/img/team/jc.jpg
-  url: https://jeow9028.github.io/vivi.io/
-
 - name: Jeff Lucca
   title: Tech Director
   url: https://github.com/lucca
+  img-src: assets/img/team/jeff.jpg
 
 - name: Zahraa Abbasi
-  img-src: assets/img/team/zahraa.jpg
   title: Marketing Director
+  url: https://github.com/zahraaabbasi
+  img-src: assets/img/team/zahraa.jpg
 
 - name: Abbigail Nicholson
-  title: Organizer
+  title: Logistics Director
   url: https://github.com/abbirosen
+  img-src: assets/img/team/abbi.jpg
 
 - name: Priyanka Karki
   title: Hacker Experience Director
   url: https://github.com/priyankarki
+  img-src: assets/img/team/priyanka.jpg
 
 - name: Matthew Strong
   title: Tech Director
   url: https://github.com/peasant98
-
-- name: Devon Soto
-  title: Organizer
-  img-src: assets/img/team/devon.jpg
-  url: https://github.com/devonsoto77/
+  img-src: assets/img/team/matt.jpg
 
 - name: Parth Adroja
   title: Organizer
   url: https://github.com/parthadroja5795/
+  img-src: assets/img/team/parth.jpg
 
 - name: Rami Mouro
   title: Organizer
   url: https://github.com/ramalamadingdong
+  img-src: assets/img/team/rami.jpg
 
 - name: Aren Dalloul
   title: Organizer
+  img-src: assets/img/team/aren.jpg
 
 - name: Oceane Andreis
   title: Organizer
-
-- name: Soumyajyoti Bhattacharya
-  title: Organizer
+  url: https://github.com/Oceanestars
+  img-src: assets/img/team/oceane.jpg
 
 - name: Byungjin Kim
   title: Organizer
+  url: https://github.com/bjkim00
+  img-src: assets/img/team/bj.jpg
 
 - name: Tahmina Ahmad
   title: Organizer
+  url: https://github.com/tahminaahmad
+  img-src: assets/img/team/tahmina.jpg
 
 - name: Cathleen Samson
   title: Organizer
-
-- name: Adam Chehadi
-  title: Organizer
+  img-src: assets/img/team/cathleen.jpg
 
 - name: Animesh Gupta
   title: Organizer
+  img-src: assets/img/team/animesh.jpg
+
+- name: Ryan Shea
+  title: Organizer
+  url: https://shea.cool/
+  img-src: assets/img/team/ryan.jpg
+
+- name: Kyle Pfromer
+  title: Organizer
+  img-src: assets/img/team/kyle.jpg
+
+- name: Gareth Rader
+  title: Organizer
+  img-src: assets/img/team/gareth.jpg
