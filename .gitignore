@@ -1,3 +1,13 @@
+workspace.xml
+/website/nbproject/private/
+*.swp
+Thumbs.db
+.idea/*
+_site/*
 .sass-cache/
-_site/
-.DS_Store
+node_modules/*
+/npm-debug.log
+.DS_STORE
+.vs/
+vendor/
+.jekyll-cache/**

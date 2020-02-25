@@ -47,11 +47,6 @@
   url: https://github.com/parthadroja5795/
   img-src: assets/img/team/parth.jpg
 
-- name: Rami Mouro
-  title: Organizer
-  url: https://github.com/ramalamadingdong
-  img-src: assets/img/team/rami.jpg
-
 - name: Aren Dalloul
   title: Organizer
   img-src: assets/img/team/aren.jpg
@@ -75,10 +70,6 @@
   title: Organizer
   img-src: assets/img/team/cathleen.jpg
 
-- name: Animesh Gupta
-  title: Organizer
-  img-src: assets/img/team/animesh.jpg
-
 - name: Ryan Shea
   title: Organizer
   url: https://shea.cool/
@@ -87,7 +78,3 @@
 - name: Kyle Pfromer
   title: Organizer
   img-src: assets/img/team/kyle.jpg
-
-- name: Gareth Rader
-  title: Organizer
-  img-src: assets/img/team/gareth.jpg
