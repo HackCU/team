@@ -3,7 +3,9 @@
 name: HackCU Team
 og: assets/img/og.png
 logo: assets/img/hackcu6_logo.png
-events_bg_img: /assets/img/people.jpg
+events_bg_img: /assets/img/new_people.jpg
+group_img: /assets/img/hackcu_vi_6.jpg
+
 original_repo: https://github.com/hackcu/team
 description: Do you like HackCU? Join our team!
 ga: UA-109088240-1

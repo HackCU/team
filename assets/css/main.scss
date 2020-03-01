@@ -377,6 +377,18 @@ section {
     padding-top: 2em;
 }
 
+section.team {
+  .group-pic {
+    border-radius: 8px;
+    max-width: 50%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    @media (max-width:767px){
+      max-width: 80%;
+    }
+  }
+}
+
 
 section.apply{
     background: linear-gradient( rgba($events-color, 0.75), rgba($events-color, 0.75) ), url(../../{{site.events_bg_img}}) no-repeat center center/cover;
