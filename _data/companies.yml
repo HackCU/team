@@ -7,6 +7,9 @@
 - url: https://microsoft.com
   img-src: assets/img/companies/microsoft.png
 
+- url: https://facebook.com
+  img-src: assets/img/companies/fb.svg
+
 - url: https://www.amazon.com/
   img-src: assets/img/companies/amazon.png  
 
